@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TickTrack Log Symptoms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav role="navigation">Nav</nav>
+    <main role="main">
+        <header role="banner">
+            <h1>TickTrack: Log Symptoms</h1>
+            
+        </header>
+
+        <section>
+            <form id="log-symptoms">
+                <label for="log-date">Date:</label>
+                <input type="date" id="log-date" name="log-date">
+                <div class="form-section overall-health">
+                    <label for="overall-health"><h2>Overall Health</h2></label>
+                    <p>Generally, do you feel:</p>
+                    <input type="radio" name="overall-health" value="1" class="overall-health-radio">
+                    <label for="overall-health">Much Worse</label>
+                    <input type="radio" name="overall-health" value="2" class="overall-health-radio">
+                    <label for="overall-health">Worse</label>
+                    <input type="radio" name="overall-health" value="3" class="overall-health-radio">
+                    <label for="overall-health">Same</label>
+                    <input type="radio" name="overall-health" value="4" class="overall-health-radio">
+                    <label for="overall-health">Better</label>
+                    <input type="radio" name="overall-health" value="5" class="overall-health-radio">
+                    <label for="overall-health">Much Better</label>
+                </div>
+                <div class="form-section symptoms">
+                    <label for="symptoms"><h2>Symptoms</h2></label>
+                    <label for="persistent-swollen-glands">Persistent swollen glands</label>
+                    <select id="persistent-swollen-glands" name="persistent-swollen-glands">
+                        <option value="none">None</option>
+                        <option value="mild">Mild</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="severe">Severe</option>
+                    </select>
+                    <br>
+                    <label for="sore-throat">Sore Throat</label>
+                    <select id="sore-throat" name="sore-throat">
+                        <option value="none">None</option>
+                        <option value="mild">Mild</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="severe">Severe</option>
+                    </select>
+                    <br>
+                    <label for="Fevers">Fevers</label>
+                    <select id="Fevers" name="Fevers">
+                        <option value="none">None</option>
+                        <option value="mild">Mild</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="severe">Severe</option>
+                    </select>
+                    <br>
+                    <label for="Sore-soles">Sore soles, especially in the morning</label>
+                    <select id="Sore-soles" name="Sore-soles">
+                        <option value="none">None</option>
+                        <option value="mild">Mild</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="severe">Severe</option>
+                    </select>
+                    <br>
+                    <label for="joint-pain">Joint Pain</label>
+                    <select id="joint-pain" name="joint-pain">
+                        <option value="none">None</option>
+                        <option value="mild">Mild</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="severe">Severe</option>
+                    </select>
+                    <br>
+                    <label for="joint-swelling">Joint Swelling</label>
+                    <select id="joint-swelling" name="joint-swelling">
+                        <option value="none">None</option>
+                        <option value="mild">Mild</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="severe">Severe</option>
+                    </select>
+                    <br>
+                    <label for="unexplained-back-pain">Unexplained back pain</label>
+                    <select id="unexplained-back-pain" name="unexplained-back-pain">
+                        <option value="none">None</option>
+                        <option value="mild">Mild</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="severe">Severe</option>
+                    </select>
+                    <br>
+                    <label for="stiffness-joints-back">Stiffness of the joints or back</label>
+                    <select id="stiffness-joints-back" name="stiffness-joints-back">
+                        <option value="none">None</option>
+                        <option value="mild">Mild</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="severe">Severe</option>
+                    </select>
+                    <br>
+                    <label for="muscle-pain-cramps">Muscle pain or cramps</label>
+                    <select id="muscle-pain-cramps" name="muscle-pain-cramps">
+                        <option value="none">None</option>
+                        <option value="mild">Mild</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="severe">Severe</option>
+                    </select>
+                </div>
+                <div class="form-section new-infection">
+                    <p>Since your last symptom log, have there been any of the following:</p>
+                    <input type="checkbox" name="new-infection" value="new tick bite" class="new-infection-checkbox">
+                    <label for="new-infection">New tick bite</label>
+                    <input type="checkbox" name="new-infection" value="new spotted rash" class="new-infection-checkbox">
+                    <label for="new-infection">New spotted rash over large area</label><br>
+                    <input type="checkbox" name="new-infection" value="new EM rash" class="new-infection-checkbox">
+                    <label for="new-infection">New 'EM" rash (discrete circle)</label>
+                    <input type="checkbox" name="new-infection" value="new linear streaks" class="new-infection-checkbox">
+                    <label for="new-infection">New linear, red streaks</label>
+                </div>
+                <button>Save</button><button>Reset</button>
+            </form>
+        </section>
+        
+      
+    </main>
+    <footer role="content-info">Footer</footer>
+</body>
+</html>
